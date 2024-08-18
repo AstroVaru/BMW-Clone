@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  Background Image</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(239, 236, 236);
+  padding:0;
+}
+
+.navbar-brand.navbar-logo {
+  background-image: url('./agile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px; /* Adjust the width of the logo */
+  height: 84px; /* Adjust the height of the logo */
+  margin-left: 30px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 280px;
+  padding-bottom: auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item.active .nav-link {
+  font-weight: bold;
+}
+
+#projectManagement {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 87.8vh;
+  margin: 0;
+}
+
+/* Change background image when #projectManagement is targeted */
+#projectManagement:target {
+  background-image: url('https://storage.googleapis.com/profit-prod/wp-content/uploads/2022/04/34ad1710-agile-project.png');
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-grey">
+  <a class="navbar-brand navbar-logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#projectManagement">Project Management</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/createproject">Create Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/createresource">Add Resource</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/updateproject">Update Project</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="projectManagement" class="content">
+  <!-- Project Management content -->
+</div>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
